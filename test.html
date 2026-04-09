@@ -1,39 +1,47 @@
 <!DOCTYPE html>
-
 <html>
-	<title> Roci </title>
-	<link rel="icon" type="image/x-icon" href="./Image/image.ico">
-	
-	<body style="background-color: rgb(255, 133, 71);">
-	<h1> Rocă </h1>
-	În geologie, o rocă (numită și piatră) este orice masă solidă sau agregat de minerale sau materie mineraloidă care apare în mod natural. Este clasificată după mineralele incluse, compoziția sa chimică și modul în care este formată. <br>Rocile formează stratul solid exterior al Pământului, crusta, și cea mai mare parte a interiorului său, cu excepția nucleului exterior lichid și a buzunarelor de magmă din astenosferă. Studiul rocilor implică multiple subdiscipline ale geologiei, inclusiv petrologia și mineralogia.<br>Acesta poate fi limitat la rocile găsite pe Pământ, sau poate include geologia planetară care studiază rocile altor obiecte cerești.<br><br>
-<img src=./Image/roca.jpg><br>
+<head>
+    <title> Roci </title>
+    <link rel="icon" type="image/x-icon" href="imagini/image.ico">
+    <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+    <style>
+    table, th, td {
+        border: 3px solid black;
+    }
+    </style>
+</head>
 
-<table border="1" style="width:100%; border-collapse: collapse; text-align: left;">
-  <tr style="background-color: #f2f2f2;">
-    <th>Tip de Roca</th>
-    <th>Provenienta</th>
+<body style="background-color: rgb(255, 133, 71);">
+<input type="text" id="cautare" onkeyup="cautaRoca()" placeholder="Caută o rocă...">
+    <h1> Rocă </h1>
+    În geologie, o rocă (numită și piatră) este orice masă solidă sau agregat de minerale sau materie mineraloidă care apare în mod natural. Este clasificată după mineralele incluse, compoziția sa chimică și modul în care este formată. <br>Rocile formează stratul solid exterior al Pământului, crusta, și cea mai mare parte a interiorului său, cu excepția nucleului exterior lichid și a buzunarelor de magmă din astenosferă. Studiul rocilor implică multiple subdiscipline ale geologiei, inclusiv petrologia și mineralogia.<br>Acesta poate fi limitat la rocile găsite pe Pământ, sau poate include geologia planetară care studiază rocile altor obiecte cerești.<br><br>
+<img src="imagini/roca.jpg"><br>
+<div class="text"><h2 style="font-size: 40px; font-weight: bold;">Tipuri de roci:</h2></div>
+
+<table border="1" style="width:100%; border-collapse: collapse; background-color: orange;">
+  <tr>
+    <th>Categorie</th>
+    <th>Numele rocii</th>
   </tr>
   <tr>
-    <td><a href="./HTML/bazalt.html">Bazalt</a></td>
-    <td>Masă solidă naturală</td>
+    <td rowspan="2"><b>Vulcanice</b></td>
+    <td><a href="pagini/andezit.html">Andezit</a></td>
   </tr>
   <tr>
-    <td><a href="./HTML/calcar.html">Calcar</a></td>
-    <td>Agregat de minerale</td>
+    <td><a href="pagini/bazalt.html">Bazalt</a></td>
   </tr>
   <tr>
-    <td><a href="./HTML/andezit.html">Andezit</a></td>
-    <td>Masă solidă naturală</td>
+    <td rowspan="2"><b>Sedimentare</b></td>
+    <td><a href="pagini/calcar.html">Calcar</a></td>
   </tr>
   <tr>
-    <td><a href="./HTML/antracit.html">Antracit</a></td>
-    <td>Materie mineraloidă</td>
+    <td><a href="pagini/creta.html">Creta</a></td>
   </tr>
   <tr>
-    <td><a href="./HTML/creta.html">Creta</a></td>
-    <td>Agregat de minerale</td>
+    <td><b>Combustibili fosili</b></td>
+    <td><a href="pagini/antracit.html">Antracit</a></td>
   </tr>
 </table>
-	</body>
+</body>
 </html>
